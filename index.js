@@ -9,12 +9,22 @@ function initDictionary(filename) {
   var words = txt.split(/\s/);
   console.log('have', words.length, 'words');
   console.log(words[0], words[1]);
-  var d = new trie.Trie();
 
+  var d = trie.createTrieFromArray(words);
   return d;
 }
 
 var start = new Date();
 var dictionary = initDictionary(path.join(__dirname, 'boggleDictionary.txt'));
 var finish = new Date();
-console.log('dictionary init took', finish - start);
+console.log('dictionary init took', finish - start, 'ms');
+console.log(dictionary)
+
+module.exports = {
+  isWord: function (word) {
+    return dictionary.lookup(word);
+  },
+  isWordPrefix: function (str) {
+    return dictionary.isValidPrefix(word);
+  }
+};

@@ -1,21 +1,25 @@
 {
   "name": "prefix-dictionary",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Checking words by prefix tree",
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/gt test/*.js --output"
   },
   "pre-commit": "npm test",
-  "repository": "https://bitbucket.org/bahmutov/prefix-dictionary.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bahmutov/prefix-dictionary.git"
+  },
+  "private": false,
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "trie": "0.2.1",
-    "check-types": "0.6.4"
+    "check-types": "~1.1.1"
   },
   "devDependencies": {
-    "gt": "0.8.8",
+    "gt": "~0.8.21",
     "pre-git": "0.0.14"
   }
 }

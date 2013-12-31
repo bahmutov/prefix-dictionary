@@ -4,7 +4,7 @@ var fs = require('fs');
 var trie = require('trie');
 
 function initDictionary(filename) {
-  check.verifyString(filename, 'missing filename');
+  check.verify.string(filename, 'missing filename');
   var txt = fs.readFileSync(filename, 'utf-8');
   var words = txt.split(/\s/);
   console.log('dictionary has', words.length, 'words');

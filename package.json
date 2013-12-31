@@ -4,16 +4,16 @@
   "description": "Checking words by prefix tree",
   "main": "index.js",
   "scripts": {
-    "test": "gt test/*.js --output"
+    "test": "node node_modules/gt test/*.js --output"
   },
   "repository": "https://bitbucket.org/bahmutov/prefix-dictionary.git",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "trie": "~0.2.1",
-    "check-types": "~0.6.4"
+    "trie": "0.2.1",
+    "check-types": "0.6.4"
   },
   "devDependencies": {
-    "gt": "~0.8.8"
+    "gt": "0.8.8"
   }
 }

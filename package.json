@@ -1,12 +1,17 @@
 {
   "name": "prefix-dictionary",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Checking words by prefix tree",
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/gt test/*.js --output"
   },
   "pre-commit": "npm test",
+  "pre-push": [
+    "rm -rf node_modules",
+    "npm install",
+    "npm test"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/bahmutov/prefix-dictionary.git"

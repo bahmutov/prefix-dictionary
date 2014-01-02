@@ -14,7 +14,7 @@ function initDictionary(filename) {
 }
 
 var start = new Date();
-var dictionary = initDictionary(path.join(__dirname, 'boggleDictionary.txt'));
+var dictionary = initDictionary(path.join(__dirname, 'ospd4.txt'));
 var finish = new Date();
 console.log('dictionary init took', finish - start, 'ms');
 // console.log(dictionary)

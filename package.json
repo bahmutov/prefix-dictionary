@@ -20,11 +20,11 @@
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "trie": "0.2.1",
-    "check-types": "~1.1.1"
+    "check-types": "1.4.0",
+    "trie": "0.2.1"
   },
   "devDependencies": {
-    "gt": "~0.8.21",
-    "pre-git": "0.0.14"
+    "gt": "0.8.47",
+    "pre-git": "0.1.1"
   }
 }
